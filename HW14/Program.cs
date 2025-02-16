@@ -20,9 +20,11 @@
             while (true)
             {
                 Console.WriteLine("Введите номер страницы");
+                
                 try
                 {
                     int str = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine();
 
                     try
                     {
@@ -39,6 +41,9 @@
                 }
 
                 Console.WriteLine();
+                Console.WriteLine("Для продолжения нажмите любую клавишу .......");
+                Console.ReadKey();
+                Console.Clear();
 
             }
         }
